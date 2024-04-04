@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Co, initial-scale=1.0">
+    <title>Contact</title>
+
+    <div class="container">
+
+        <a  href="index.html" style="margin-left: 500px; font-size: 14pt; padding:13px;">Home</a>
+        <a href="about.html" style="font-size: 14pt; padding:13px;">About</a>
+        <a href="projects.html" style="font-size: 14pt; padding:13px;">My Projects</a>
+        <a class="active" href="contact.html" style="font-size: 14pt; padding:13px;">Contact</a>
+
+     </div>
+</head>
+<body>
+    <h1>Fill in the form below</h1>
+
+    
+    <div class="container">
+        <form action="action_page.php" target="_blank">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">South Africa</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+      
+
+       <style>
+        .button{
+            background-color: pink;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 70px;
+            border-radius: 40px;
+          }
+    
+          .container{
+                background-color: whitesmoke;
+                color: grey;
+                display: flex;
+                margin-bottom:50px;
+                height: auto;
+                width: auto;
+            }
+    
+      .container a:hover {
+      background-color: pink;
+      color: grey;
+      border-radius: 40px;
+    }
+
+    a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    }
+     
+    /* Form CSS*/
+    input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: pink;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+</body>
+
+<div class="container">
+    <h3 style="margin-left: 500px; font-size: 12pt;">All rights reserved &copy; 2024</h3>
+  </div>
+
+</html>
